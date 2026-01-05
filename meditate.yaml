@@ -1,0 +1,24 @@
+sequence:
+  - type: turn_off
+    device_id: 62b66acc29b5145654ead961c66a1a17
+    entity_id: ed5670f041c4dfacadc219f2ebeeb16e
+    domain: switch
+    metadata:
+      secondary: false
+  - action: script.notifytitanchime
+    metadata: {}
+    data: {}
+  - delay:
+      hours: 0
+      minutes: 1
+      seconds: 0
+      milliseconds: 0
+  - action: script.notifytitan
+    metadata: {}
+    data: {}
+  - type: turn_on
+    device_id: 62b66acc29b5145654ead961c66a1a17
+    entity_id: ed5670f041c4dfacadc219f2ebeeb16e
+    domain: switch
+alias: Meditate
+description: ""
