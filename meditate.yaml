@@ -5,14 +5,18 @@ sequence:
     domain: switch
     metadata:
       secondary: false
-  - action: script.notifytitanchime
-    metadata: {}
-    data: {}
-  - delay:
-      hours: 0
-      minutes: 1
-      seconds: 0
-      milliseconds: 0
+  - alias: Repeat chime n times
+    repeat:
+      count: 4
+      sequence:
+        - action: script.notifytitanchime
+          metadata: {}
+          data: {}
+        - delay:
+            hours: 0
+            minutes: 1
+            seconds: 0
+            milliseconds: 0
   - action: script.notifytitan
     metadata: {}
     data: {}
